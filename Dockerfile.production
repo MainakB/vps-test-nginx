@@ -1,2 +1,7 @@
 FROM nginx
+
+LABEL maintainer="kaniamu" \
+    name="test-nginx" \
+    version="0.1"
+
 COPY default.conf /etc/nginx/conf.d/default.conf
